@@ -12,7 +12,7 @@ namespace AzureBootcampBH.Controllers
         public ActionResult Index()
         {
            // throw new Exception("Erro forçado"); 
-            ViewBag.Ambiente = ConfigurationManager.AppSettings["Ambiente"];
+            ViewBag.Ambiente = ConfigurationManager.AppSettings["Ambiente"] + " - Azure Brasil";
             return View();
         }
 
